@@ -1,0 +1,11 @@
+<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
+    <label for="email">Email:</label>
+    <input id="email" type="text" name="email" placeholder="email" 
+           <?php if (!empty($view['email'])): ?>value="<?php echo htmlspecialchars($view['email']) ?>"<?php endif ?> 
+           /><br />
+    <label for="pqssword">Password:</label>
+    <input name="password" type="password" name="password" /><br />
+    <input type="submit" /><br />
+    <a href="<?php echo $_SERVER['REQUEST_URI']; ?>/?r=registration">Regisration</a>
+    <a href="?r=registration">Regisration</a>
+</form>
